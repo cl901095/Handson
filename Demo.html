@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Introduction</title>
+  <style>
+    h1 {
+      color: red;
+    }
+    h4{
+        color: blue;
+    }
+    #heading{
+        background-color: rgb(255, 98, 0);
+        text-align: center;
+        border-radius: 20px;
+        height: 25px;
+    }
+    .candy{
+        background-color: rgb(255, 98, 0);
+        text-align: center;
+        border-radius: 20px;
+        height: 25px;
+    }
+    .cas{
+        color:red;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1>Types of CSS Styles</h1>
+    <hr />
+    <h4 style="background-color: rgb(255, 98, 0); text-align: center; border-radius: 20px;height: 25px;"  >In Line CSS</h4>
+    <p>
+      Here we can give the style, which line do we need
+      <br>
+      <br>
+     <p>(Note: Attributes are used to change the behavior the element)</p>
+     * Here we can use style attribute
+     <br>
+     * Ex: style="color: blue;"
+     <br>
+     * EX: style="background-color: blue"
+     <br>
+     * Not only colors we give border radius and its height also
+        <br>
+        => style="background-color: blue; text-align: center; border-radius: 20px;height: 25px;"
+        <br>
+        * background-color=> key
+        <br>
+        * blue => value
+    </p>
+    <hr />
+    <h4 id="heading">Internal CSS</h4>
+    <p>
+        * Here we can Use Style Tag in Head
+        <br>
+         * Ex:  h4{
+                   color: blue;
+                  }
+        <br>
+        * We have a problem while using this style, 
+        If we need to modify the specific heading or paragraph color it will
+        change the all same tag in that page, So we need to give unique identity by using of "id" attribute 
+        <br>
+        * Ex:   #heading{
+            background-color: rgb(255, 98, 0);
+            text-align: center;
+            border-radius: 20px;
+            height: 25px;
+        }
+        <br>
+        <p>(Note: CSS Selectors
+            
+            <br>
+            * These are attributes
+            <br>
+            <br>
+            =>tag
+           <p class="cas"> =>id-- we can use # in Internal CSS</p> 
+           <p class="cas">=>class-- we can use . in Internal CSS</p>
+            =>name
+            <br>
+            <br>
+            * they are the CSS selectors which ae used to give identity of the headings)
+        </p>
+    <hr>
+    <h4 class="candy">External CSS</h4>
+    <p id="chandra">
+        * Here we can access the file in the folder of extension of .css.
+         In that file we given attributes and its values.
+         <br>
+         * We are given all the attributes of this External CSS way is recommendable.
+    </p>
+    </p>
+  </body>
+</html>
